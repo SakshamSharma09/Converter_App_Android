@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
                 ft.text = ((cm.text.toString().toFloat()) / 30.48).toString() + " ft"
             }
             R.id.currency ->{
-                rupees.text = ((dollars.text.toString().toFloat()) / 73.0).toString() + " ₹"
+                rupees.text = ((dollars.text.toString().toFloat()) * 73.0).toString() + " ₹"
             }
             R.id.temp ->{
                 cel.text = (((fahr.text.toString().toFloat())-32)/1.8).toString() + " ℃"
